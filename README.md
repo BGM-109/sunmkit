@@ -7,7 +7,7 @@
 pub.dev 에 올라가 있지 않은 코드기 때문에 path 로 활성화 시켜줍니다.
 
 ```
-dart pub global activate --source path ./sunmkit
+dart pub global activate --source path ./
 
 ```
 

@@ -15,7 +15,7 @@ class CreateCommand extends Command<int> {
         abbr: 'n',
         help: 'The name of the project',
       )
-      ..addFlag('org', abbr: 'o', help: 'The name of the organization');
+      ..addOption('org', abbr: 'o', help: 'The name of the organization');
   }
 
   final Logger logger;
@@ -35,6 +35,7 @@ class CreateCommand extends Command<int> {
     final proejctName = argResults?['name'] as String;
     final org =
         argResults?['org'] ?? 'com.example.${proejctName.toLowerCase()}';
+
     if (proejctName.isEmpty) {
       logger.err('project name is empty');
       return ExitCode.noInput.code;
