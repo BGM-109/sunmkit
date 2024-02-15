@@ -5,6 +5,12 @@ import 'package:mason/mason.dart';
 import 'package:sunmkit/src/templates/counter/counter_bundle.dart';
 import 'package:sunmkit/src/templates/post_generate_action.dart';
 
+/// 생성 기능
+///
+/// 1. 기본 카운터 템플릿
+/// riverpod counter , envie, locale,
+///
+///
 class CreateCommand extends Command<int> {
   CreateCommand({
     required this.logger,
